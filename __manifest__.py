@@ -1,10 +1,10 @@
 # -*- coding: utf-8 -*-
 {
-    'name': 'Customize POS',
-    'version': '18.0.1.0.26',
+    'name': 'Customize POS (TPV)',
+    'version': '18.0.1.0.27',
     'category': 'Technical',
-    'summary': 'Personalización del Punto de Venta',
-    'description': """Permite personalizar el Punto de Venta: colores de categorías, nombres en mayúsculas y más opciones visuales.""",
+    'summary': 'Personalización visual del TPV (categorías, colores, textos)',
+    'description': """Personaliza el TPV: colores de categorías, nombres de productos y categorías en mayúsculas, y más opciones visuales desde los ajustes.""",
     'author': 'Eduardo Magrané',
     'website': 'https://lesolivex.com',
     'license': 'LGPL-3',
@@ -15,15 +15,15 @@
     ],
     'assets': {
         'web.assets_backend': [
-            'colorlist_customizer/static/src/scss/colorlist_customizer.scss',
-            'colorlist_customizer/static/src/js/colorlist_patch.js',
+            'customize_pos/static/src/scss/colorlist_customizer.scss',
+            'customize_pos/static/src/js/colorlist_patch.js',
         ],
         'point_of_sale.assets': [
-            'colorlist_customizer/static/src/scss/colorlist_customizer.css',
-            'colorlist_customizer/static/src/scss/pos_product_names.css',
-            'colorlist_customizer/static/src/js/colorlist_patch.js',
-            'colorlist_customizer/static/src/xml/pos_category_button.xml',
-            'colorlist_customizer/static/src/js/pos_product_names.js',
+            'customize_pos/static/src/scss/colorlist_customizer.css',
+            'customize_pos/static/src/scss/pos_product_names.css',
+            'customize_pos/static/src/js/colorlist_patch.js',
+            'customize_pos/static/src/xml/pos_category_button.xml',
+            'customize_pos/static/src/js/pos_product_names.js',
         ],
     },
     'installable': True,

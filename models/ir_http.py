@@ -18,17 +18,17 @@ class IrHttp(models.AbstractModel):
         
         for i in range(12):
             colors[f'colorlist_{i}'] = params.get_param(
-                f'colorlist_customizer.color_{i}', defaults[i]
+                f'customize_pos.color_{i}', defaults[i]
             )
         
-        result['colorlist_customizer'] = colors
+        result['customize_pos'] = colors
         
         # Añadir configuración de nombres de productos en mayúsculas
-        uppercase_value = params.get_param('colorlist_customizer.product_names_uppercase', 'False')
-        result['colorlist_customizer_product_uppercase'] = uppercase_value == 'True'
+        product_uppercase = params.get_param('customize_pos.product_names_uppercase', 'False')
+        result['customize_pos_product_uppercase'] = product_uppercase == 'True'
         
-        import logging
-        _logger = logging.getLogger(__name__)
-        _logger.info('ColorlistCustomizer: product_names_uppercase = %s', result['colorlist_customizer_product_uppercase'])
+        # Añadir configuración de nombres de categorías en mayúsculas
+        category_uppercase = params.get_param('customize_pos.category_names_uppercase', 'False')
+        result['customize_pos_category_uppercase'] = category_uppercase == 'True'
         
         return result

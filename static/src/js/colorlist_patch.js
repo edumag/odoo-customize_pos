@@ -1,20 +1,16 @@
-// Colorlist Customizer - Aplicar colores personalizados
-// Este script se ejecuta en el contexto del POS sin usar imports
-
+// Customize POS - Aplicar colores personalizados
 (function() {
     'use strict';
     
     function applyCustomColors() {
-        // Obtener colores de la sesión (window.odoo define session_info)
         var session = window.odoo && window.odoo.session_info;
-        var colors = session && session.colorlist_customizer;
+        var colors = session && session.customize_pos;
         
         if (!colors) {
-            console.log('[ColorlistCustomizer] No colors found in session');
+            console.log('[CustomizePOS] No colors found in session');
             return;
         }
 
-        // Actualizar variables CSS
         var root = document.documentElement;
         for (var i = 0; i < 12; i++) {
             var color = colors['colorlist_' + i];
@@ -23,21 +19,22 @@
             }
         }
 
-        console.log('[ColorlistCustomizer] Colors applied:', colors);
+        console.log('[CustomizePOS] Colors applied');
     }
 
-    // Función para esperar a que odoo esté disponible
-    function waitForOdoo(callback) {
+    function waitForOdoo(callback, attempts) {
+        attempts = attempts || 0;
+        if (attempts > 50) return;
+        
         if (window.odoo && window.odoo.session_info) {
             callback();
         } else {
             setTimeout(function() {
-                waitForOdoo(callback);
+                waitForOdoo(callback, attempts + 1);
             }, 100);
         }
     }
 
-    // Aplicar cuando el DOM esté listo
     function init() {
         waitForOdoo(function() {
             applyCustomColors();
@@ -50,11 +47,9 @@
         init();
     }
 
-    // Re-aplicar periódicamente por si el POS carga dinámicamente
     setInterval(function() {
         if (document.querySelector('.pos')) {
             applyCustomColors();
         }
     }, 2000);
-
 })();

@@ -3,10 +3,10 @@
     <!-- Inyectar CSS en el TPV mediante herencia de la vista principal -->
     <template id="assets_pos" inherit_id="point_of_sale.index">
         <xpath expr="//head" position="inside">
-            <link rel="stylesheet" href="/colorlist_customizer/static/src/scss/colorlist_customizer.css"/>
-            <link rel="stylesheet" href="/colorlist_customizer/static/src/scss/pos_product_names.css"/>
-            <script type="text/javascript" src="/colorlist_customizer/static/src/js/colorlist_patch.js"/>
-            <script type="text/javascript" src="/colorlist_customizer/static/src/js/pos_product_names.js"/>
+            <link rel="stylesheet" href="/customize_pos/static/src/scss/colorlist_customizer.css"/>
+            <link rel="stylesheet" href="/customize_pos/static/src/scss/pos_product_names.css"/>
+            <script type="text/javascript" src="/customize_pos/static/src/js/colorlist_patch.js"/>
+            <script type="text/javascript" src="/customize_pos/static/src/js/pos_product_names.js"/>
         </xpath>
     </template>
 </odoo>
