@@ -1,10 +1,10 @@
 # -*- coding: utf-8 -*-
 {
-    'name': 'Colorlist Customizer',
-    'version': '18.0.1.0.25',
+    'name': 'Customize POS',
+    'version': '18.0.1.0.26',
     'category': 'Technical',
-    'summary': 'Personaliza colores y visualización del TPV',
-    'description': """Permite al administrador personalizar los 12 colores del widget o_colorlist y las opciones de visualización del TPV desde los Ajustes de Odoo.""",
+    'summary': 'Personalización del Punto de Venta',
+    'description': """Permite personalizar el Punto de Venta: colores de categorías, nombres en mayúsculas y más opciones visuales.""",
     'author': 'Eduardo Magrané',
     'website': 'https://lesolivex.com',
     'license': 'LGPL-3',
