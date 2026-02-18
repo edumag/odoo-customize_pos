@@ -1,24 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <!-- Inyectar CSS dinámico inline en el TPV -->
-    <template id="assets_pos" inherit_id="point_of_sale.index">
+    <!-- Inyectar CSS dinámico inline en el backend - múltiples templates para asegurar cobertura -->
+    
+    <!-- 1. Template web.layout - layout principal del backend -->
+    <template id="assets_backend_colors_layout" inherit_id="web.layout">
         <xpath expr="//head" position="inside">
-            <!-- CSS estático con las reglas de estilo (sin valores de colores) -->
-            <link rel="stylesheet" href="/customize_pos/static/src/scss/colorlist_variables.css"/>
-            <link rel="stylesheet" href="/customize_pos/static/src/scss/colorlist_customizer.css"/>
-            <link rel="stylesheet" href="/customize_pos/static/src/scss/pos_product_names.css"/>
-            <script type="text/javascript" src="/customize_pos/static/src/js/colorlist_patch.js"/>
-            <script type="text/javascript" src="/customize_pos/static/src/js/pos_product_names.js"/>
-            
-            <!-- CSS dinámico inline con colores personalizados - CARGADO AL FINAL para prioridad -->
             <t t-set="colors" t-value="{
                 'color_0': 'f15b40', 'color_1': 'ffdd00', 'color_2': 'af7e6c', 'color_3': 'f7941d',
                 'color_4': '00bfdf', 'color_5': '8dc63f', 'color_6': 'f173ac', 'color_7': 'ee3f75',
                 'color_8': 'b58f2e', 'color_9': 'FF00FF', 'color_10': 'b3b6e7', 'color_11': 'b3b62a'
             }"/>
             <t t-set="params" t-value="request.env['ir.config_parameter'].sudo()"/>
-            <style type="text/css">
-/* Colores personalizados desde configuración - Prioridad alta */
+            <style type="text/css" id="customize-pos-colors-inline">
+/* Colores personalizados desde configuración - Layout */
 :root {
   --colorlist-color-0: #<t t-esc="params.get_param('customize_pos.color_0', colors['color_0'])"/>;
   --colorlist-color-1: #<t t-esc="params.get_param('customize_pos.color_1', colors['color_1'])"/>;

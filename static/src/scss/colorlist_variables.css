@@ -1,0 +1,16 @@
+/* Variables CSS para colores personalizados - Fallback */
+/* Estos valores se sobrescriben por el CSS dinámico inline */
+:root {
+  --colorlist-color-0: #f15b40;
+  --colorlist-color-1: #ffdd00;
+  --colorlist-color-2: #af7e6c;
+  --colorlist-color-3: #f7941d;
+  --colorlist-color-4: #00bfdf;
+  --colorlist-color-5: #8dc63f;
+  --colorlist-color-6: #f173ac;
+  --colorlist-color-7: #ee3f75;
+  --colorlist-color-8: #b58f2e;
+  --colorlist-color-9: #FF00FF;
+  --colorlist-color-10: #b3b6e7;
+  --colorlist-color-11: #b3b62a;
+}

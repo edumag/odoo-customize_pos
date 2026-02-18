@@ -1,18 +1,8 @@
-/* Variables CSS para colores personalizados */
-:root {
-  --colorlist-color-0: #FF0000;
-  --colorlist-color-1: #FF7F00;
-  --colorlist-color-2: #FFFF00;
-  --colorlist-color-3: #00FF00;
-  --colorlist-color-4: #0000FF;
-  --colorlist-color-5: #4B0082;
-  --colorlist-color-6: #9400D3;
-  --colorlist-color-7: #FF1493;
-  --colorlist-color-8: #00FFFF;
-  --colorlist-color-9: #FF00FF;
-  --colorlist-color-10: #808080;
-  --colorlist-color-11: #000000;
-}
+/* 
+ * Este archivo contiene las reglas de estilo CSS.
+ * Los valores de los colores CSS variables (--colorlist-color-*) 
+ * se generan dinámicamente mediante el endpoint /customize_pos/colors.css
+ */
 
 /* Colores personalizados para o_colorlist en backend */
 .o_colorlist .o_colorlist_item_color_0,
