@@ -22,4 +22,13 @@ class IrHttp(models.AbstractModel):
             )
         
         result['colorlist_customizer'] = colors
+        
+        # Añadir configuración de nombres de productos en mayúsculas
+        uppercase_value = params.get_param('colorlist_customizer.product_names_uppercase', 'False')
+        result['colorlist_customizer_product_uppercase'] = uppercase_value == 'True'
+        
+        import logging
+        _logger = logging.getLogger(__name__)
+        _logger.info('ColorlistCustomizer: product_names_uppercase = %s', result['colorlist_customizer_product_uppercase'])
+        
         return result

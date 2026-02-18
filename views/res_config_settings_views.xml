@@ -45,6 +45,11 @@
                             <field name="color_11" widget="color"/>
                         </setting>
                     </block>
+                    <block title="Opciones de Visualización del TPV" name="pos_display_settings_container">
+                        <setting string="Nombres de productos en mayúsculas" help="Muestra los nombres de los productos en mayúsculas en la pantalla del TPV">
+                            <field name="product_names_uppercase"/>
+                        </setting>
+                    </block>
                 </app>
             </xpath>
         </field>

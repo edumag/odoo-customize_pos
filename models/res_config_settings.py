@@ -17,3 +17,10 @@ class ResConfigSettings(models.TransientModel):
     color_9 = fields.Char(string='Color 9', config_parameter='colorlist_customizer.color_9')
     color_10 = fields.Char(string='Color 10', config_parameter='colorlist_customizer.color_10')
     color_11 = fields.Char(string='Color 11', config_parameter='colorlist_customizer.color_11')
+    
+    # Opción para mostrar nombres de productos en mayúsculas
+    product_names_uppercase = fields.Boolean(
+        string='Nombres de productos en mayúsculas',
+        config_parameter='colorlist_customizer.product_names_uppercase',
+        default=False
+    )
