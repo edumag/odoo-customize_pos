@@ -1,0 +1,98 @@
+/* Variables CSS para colores personalizados */
+:root {
+  --colorlist-color-0: #FF0000;
+  --colorlist-color-1: #FF7F00;
+  --colorlist-color-2: #FFFF00;
+  --colorlist-color-3: #00FF00;
+  --colorlist-color-4: #0000FF;
+  --colorlist-color-5: #4B0082;
+  --colorlist-color-6: #9400D3;
+  --colorlist-color-7: #FF1493;
+  --colorlist-color-8: #00FFFF;
+  --colorlist-color-9: #FF00FF;
+  --colorlist-color-10: #808080;
+  --colorlist-color-11: #000000;
+}
+
+/* Colores personalizados para o_colorlist */
+.o_colorlist .o_colorlist_item_color_0,
+.o_widget_colorlist .o_colorlist_item_color_0,
+.o_colorlist_item_color_0 { 
+    background-color: var(--colorlist-color-0) !important; 
+}
+
+.o_colorlist .o_colorlist_item_color_1,
+.o_widget_colorlist .o_colorlist_item_color_1,
+.o_colorlist_item_color_1 { 
+    background-color: var(--colorlist-color-1) !important; 
+}
+
+.o_colorlist .o_colorlist_item_color_2,
+.o_widget_colorlist .o_colorlist_item_color_2,
+.o_colorlist_item_color_2 { 
+    background-color: var(--colorlist-color-2) !important; 
+}
+
+.o_colorlist .o_colorlist_item_color_3,
+.o_widget_colorlist .o_colorlist_item_color_3,
+.o_colorlist_item_color_3 { 
+    background-color: var(--colorlist-color-3) !important; 
+}
+
+.o_colorlist .o_colorlist_item_color_4,
+.o_widget_colorlist .o_colorlist_item_color_4,
+.o_colorlist_item_color_4 { 
+    background-color: var(--colorlist-color-4) !important; 
+}
+
+.o_colorlist .o_colorlist_item_color_5,
+.o_widget_colorlist .o_colorlist_item_color_5,
+.o_colorlist_item_color_5 { 
+    background-color: var(--colorlist-color-5) !important; 
+}
+
+.o_colorlist .o_colorlist_item_color_6,
+.o_widget_colorlist .o_colorlist_item_color_6,
+.o_colorlist_item_color_6 { 
+    background-color: var(--colorlist-color-6) !important; 
+}
+
+.o_colorlist .o_colorlist_item_color_7,
+.o_widget_colorlist .o_colorlist_item_color_7,
+.o_colorlist_item_color_7 { 
+    background-color: var(--colorlist-color-7) !important; 
+}
+
+.o_colorlist .o_colorlist_item_color_8,
+.o_widget_colorlist .o_colorlist_item_color_8,
+.o_colorlist_item_color_8 { 
+    background-color: var(--colorlist-color-8) !important; 
+}
+
+.o_colorlist .o_colorlist_item_color_9,
+.o_widget_colorlist .o_colorlist_item_color_9,
+.o_colorlist_item_color_9 { 
+    background-color: var(--colorlist-color-9) !important; 
+}
+
+.o_colorlist .o_colorlist_item_color_10,
+.o_widget_colorlist .o_colorlist_item_color_10,
+.o_colorlist_item_color_10 { 
+    background-color: var(--colorlist-color-10) !important; 
+}
+
+.o_colorlist .o_colorlist_item_color_11,
+.o_widget_colorlist .o_colorlist_item_color_11,
+.o_colorlist_item_color_11 { 
+    background-color: var(--colorlist-color-11) !important; 
+}
+
+/* Estilos para botones de categoría en POS */
+.pos .category-button {
+    transition: all 0.2s ease;
+}
+
+.pos .category-button:hover {
+    opacity: 0.8;
+    transform: scale(1.02);
+}

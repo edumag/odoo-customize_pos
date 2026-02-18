@@ -1,0 +1,61 @@
+// Sobrescribir colores con alta especificidad
+// Usando el elemento padre .o_colorlist para aumentar la especificidad
+.o_colorlist .o_colorlist_item_color_0,
+.o_widget_colorlist .o_colorlist_item_color_0 { 
+    background-color: #FF0000 !important; 
+}
+
+.o_colorlist .o_colorlist_item_color_1,
+.o_widget_colorlist .o_colorlist_item_color_1 { 
+    background-color: #FF7F00 !important; 
+}
+
+.o_colorlist .o_colorlist_item_color_2,
+.o_widget_colorlist .o_colorlist_item_color_2 { 
+    background-color: #FFFF00 !important; 
+}
+
+.o_colorlist .o_colorlist_item_color_3,
+.o_widget_colorlist .o_colorlist_item_color_3 { 
+    background-color: #00FF00 !important; 
+}
+
+.o_colorlist .o_colorlist_item_color_4,
+.o_widget_colorlist .o_colorlist_item_color_4 { 
+    background-color: #0000FF !important; 
+}
+
+.o_colorlist .o_colorlist_item_color_5,
+.o_widget_colorlist .o_colorlist_item_color_5 { 
+    background-color: #4B0082 !important; 
+}
+
+.o_colorlist .o_colorlist_item_color_6,
+.o_widget_colorlist .o_colorlist_item_color_6 { 
+    background-color: #9400D3 !important; 
+}
+
+.o_colorlist .o_colorlist_item_color_7,
+.o_widget_colorlist .o_colorlist_item_color_7 { 
+    background-color: #FF1493 !important; 
+}
+
+.o_colorlist .o_colorlist_item_color_8,
+.o_widget_colorlist .o_colorlist_item_color_8 { 
+    background-color: #00FFFF !important; 
+}
+
+.o_colorlist .o_colorlist_item_color_9,
+.o_widget_colorlist .o_colorlist_item_color_9 { 
+    background-color: #FF00FF !important; 
+}
+
+.o_colorlist .o_colorlist_item_color_10,
+.o_widget_colorlist .o_colorlist_item_color_10 { 
+    background-color: #808080 !important; 
+}
+
+.o_colorlist .o_colorlist_item_color_11,
+.o_widget_colorlist .o_colorlist_item_color_11 { 
+    background-color: #000000 !important; 
+}

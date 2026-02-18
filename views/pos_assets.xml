@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Inyectar CSS en el TPV mediante herencia de la vista principal -->
+    <template id="assets_pos" inherit_id="point_of_sale.index">
+        <xpath expr="//head" position="inside">
+            <link rel="stylesheet" href="/colorlist_customizer/static/src/scss/colorlist_customizer.css"/>
+            <script type="text/javascript" src="/colorlist_customizer/static/src/js/colorlist_patch.js"/>
+        </xpath>
+    </template>
+</odoo>
