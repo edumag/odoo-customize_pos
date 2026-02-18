@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 {
     'name': 'Colorlist Customizer',
-    'version': '18.0.1.0.9',
+    'version': '18.0.1.0.13',
     'category': 'Technical',
     'summary': 'Personaliza los colores del widget colorlist',
     'description': """
@@ -24,7 +24,6 @@
         'point_of_sale.assets': [
             'colorlist_customizer/static/src/scss/colorlist_customizer.css',
             'colorlist_customizer/static/src/js/colorlist_patch.js',
-            'colorlist_customizer/static/src/js/pos_category_button.js',
             'colorlist_customizer/static/src/xml/pos_category_button.xml',
         ],
     },

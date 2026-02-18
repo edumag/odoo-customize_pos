@@ -14,7 +14,7 @@
   --colorlist-color-11: #000000;
 }
 
-/* Colores personalizados para o_colorlist */
+/* Colores personalizados para o_colorlist en backend */
 .o_colorlist .o_colorlist_item_color_0,
 .o_widget_colorlist .o_colorlist_item_color_0,
 .o_colorlist_item_color_0 { 
@@ -96,3 +96,167 @@
     opacity: 0.8;
     transform: scale(1.02);
 }
+
+/* Mayor especificidad para botones de categoría en POS - SOBRESCRIBIR btn-light */
+.pos .category-list .category-button.o_colorlist_item_color_0,
+.pos .category-list .category-button.btn.o_colorlist_item_color_0,
+.pos .category-list .category-button.btn-light.o_colorlist_item_color_0,
+.pos .product-screen .category-button.o_colorlist_item_color_0,
+.pos .product-screen .category-button.btn.o_colorlist_item_color_0,
+.pos .product-screen .category-button.btn-light.o_colorlist_item_color_0 {
+    background-color: var(--colorlist-color-0) !important;
+}
+
+.pos .category-list .category-button.o_colorlist_item_color_1,
+.pos .category-list .category-button.btn.o_colorlist_item_color_1,
+.pos .category-list .category-button.btn-light.o_colorlist_item_color_1,
+.pos .product-screen .category-button.o_colorlist_item_color_1,
+.pos .product-screen .category-button.btn.o_colorlist_item_color_1,
+.pos .product-screen .category-button.btn-light.o_colorlist_item_color_1 {
+    background-color: var(--colorlist-color-1) !important;
+}
+
+.pos .category-list .category-button.o_colorlist_item_color_2,
+.pos .category-list .category-button.btn.o_colorlist_item_color_2,
+.pos .category-list .category-button.btn-light.o_colorlist_item_color_2,
+.pos .product-screen .category-button.o_colorlist_item_color_2,
+.pos .product-screen .category-button.btn.o_colorlist_item_color_2,
+.pos .product-screen .category-button.btn-light.o_colorlist_item_color_2 {
+    background-color: var(--colorlist-color-2) !important;
+}
+
+.pos .category-list .category-button.o_colorlist_item_color_3,
+.pos .category-list .category-button.btn.o_colorlist_item_color_3,
+.pos .category-list .category-button.btn-light.o_colorlist_item_color_3,
+.pos .product-screen .category-button.o_colorlist_item_color_3,
+.pos .product-screen .category-button.btn.o_colorlist_item_color_3,
+.pos .product-screen .category-button.btn-light.o_colorlist_item_color_3 {
+    background-color: var(--colorlist-color-3) !important;
+}
+
+.pos .category-list .category-button.o_colorlist_item_color_4,
+.pos .category-list .category-button.btn.o_colorlist_item_color_4,
+.pos .category-list .category-button.btn-light.o_colorlist_item_color_4,
+.pos .product-screen .category-button.o_colorlist_item_color_4,
+.pos .product-screen .category-button.btn.o_colorlist_item_color_4,
+.pos .product-screen .category-button.btn-light.o_colorlist_item_color_4 {
+    background-color: var(--colorlist-color-4) !important;
+}
+
+.pos .category-list .category-button.o_colorlist_item_color_5,
+.pos .category-list .category-button.btn.o_colorlist_item_color_5,
+.pos .category-list .category-button.btn-light.o_colorlist_item_color_5,
+.pos .product-screen .category-button.o_colorlist_item_color_5,
+.pos .product-screen .category-button.btn.o_colorlist_item_color_5,
+.pos .product-screen .category-button.btn-light.o_colorlist_item_color_5 {
+    background-color: var(--colorlist-color-5) !important;
+}
+
+.pos .category-list .category-button.o_colorlist_item_color_6,
+.pos .category-list .category-button.btn.o_colorlist_item_color_6,
+.pos .category-list .category-button.btn-light.o_colorlist_item_color_6,
+.pos .product-screen .category-button.o_colorlist_item_color_6,
+.pos .product-screen .category-button.btn.o_colorlist_item_color_6,
+.pos .product-screen .category-button.btn-light.o_colorlist_item_color_6 {
+    background-color: var(--colorlist-color-6) !important;
+}
+
+.pos .category-list .category-button.o_colorlist_item_color_7,
+.pos .category-list .category-button.btn.o_colorlist_item_color_7,
+.pos .category-list .category-button.btn-light.o_colorlist_item_color_7,
+.pos .product-screen .category-button.o_colorlist_item_color_7,
+.pos .product-screen .category-button.btn.o_colorlist_item_color_7,
+.pos .product-screen .category-button.btn-light.o_colorlist_item_color_7 {
+    background-color: var(--colorlist-color-7) !important;
+}
+
+.pos .category-list .category-button.o_colorlist_item_color_8,
+.pos .category-list .category-button.btn.o_colorlist_item_color_8,
+.pos .category-list .category-button.btn-light.o_colorlist_item_color_8,
+.pos .product-screen .category-button.o_colorlist_item_color_8,
+.pos .product-screen .category-button.btn.o_colorlist_item_color_8,
+.pos .product-screen .category-button.btn-light.o_colorlist_item_color_8 {
+    background-color: var(--colorlist-color-8) !important;
+}
+
+.pos .category-list .category-button.o_colorlist_item_color_9,
+.pos .category-list .category-button.btn.o_colorlist_item_color_9,
+.pos .category-list .category-button.btn-light.o_colorlist_item_color_9,
+.pos .product-screen .category-button.o_colorlist_item_color_9,
+.pos .product-screen .category-button.btn.o_colorlist_item_color_9,
+.pos .product-screen .category-button.btn-light.o_colorlist_item_color_9 {
+    background-color: var(--colorlist-color-9) !important;
+}
+
+.pos .category-list .category-button.o_colorlist_item_color_10,
+.pos .category-list .category-button.btn.o_colorlist_item_color_10,
+.pos .category-list .category-button.btn-light.o_colorlist_item_color_10,
+.pos .product-screen .category-button.o_colorlist_item_color_10,
+.pos .product-screen .category-button.btn.o_colorlist_item_color_10,
+.pos .product-screen .category-button.btn-light.o_colorlist_item_color_10 {
+    background-color: var(--colorlist-color-10) !important;
+}
+
+.pos .category-list .category-button.o_colorlist_item_color_11,
+.pos .category-list .category-button.btn.o_colorlist_item_color_11,
+.pos .category-list .category-button.btn-light.o_colorlist_item_color_11,
+.pos .product-screen .category-button.o_colorlist_item_color_11,
+.pos .product-screen .category-button.btn.o_colorlist_item_color_11,
+.pos .product-screen .category-button.btn-light.o_colorlist_item_color_11 {
+    background-color: var(--colorlist-color-11) !important;
+}
+
+/* Reglas para modo transparente (categorías no seleccionadas) */
+.pos .category-list .category-button.o_colorlist_item_color_transparent_0,
+.pos .category-list .category-button.o_colorlist_item_color_transparent_1,
+.pos .category-list .category-button.o_colorlist_item_color_transparent_2,
+.pos .category-list .category-button.o_colorlist_item_color_transparent_3,
+.pos .category-list .category-button.o_colorlist_item_color_transparent_4,
+.pos .category-list .category-button.o_colorlist_item_color_transparent_5,
+.pos .category-list .category-button.o_colorlist_item_color_transparent_6,
+.pos .category-list .category-button.o_colorlist_item_color_transparent_7,
+.pos .category-list .category-button.o_colorlist_item_color_transparent_8,
+.pos .category-list .category-button.o_colorlist_item_color_transparent_9,
+.pos .category-list .category-button.o_colorlist_item_color_transparent_10,
+.pos .category-list .category-button.o_colorlist_item_color_transparent_11,
+.pos .product-screen .category-button.o_colorlist_item_color_transparent_0,
+.pos .product-screen .category-button.o_colorlist_item_color_transparent_1,
+.pos .product-screen .category-button.o_colorlist_item_color_transparent_2,
+.pos .product-screen .category-button.o_colorlist_item_color_transparent_3,
+.pos .product-screen .category-button.o_colorlist_item_color_transparent_4,
+.pos .product-screen .category-button.o_colorlist_item_color_transparent_5,
+.pos .product-screen .category-button.o_colorlist_item_color_transparent_6,
+.pos .product-screen .category-button.o_colorlist_item_color_transparent_7,
+.pos .product-screen .category-button.o_colorlist_item_color_transparent_8,
+.pos .product-screen .category-button.o_colorlist_item_color_transparent_9,
+.pos .product-screen .category-button.o_colorlist_item_color_transparent_10,
+.pos .product-screen .category-button.o_colorlist_item_color_transparent_11 {
+    --bg-opacity: 0.3 !important;
+    background-color: var(--colorlist-color) !important;
+}
+
+.pos .category-list .category-button.o_colorlist_item_color_transparent_0 { --colorlist-color: var(--colorlist-color-0) !important; }
+.pos .category-list .category-button.o_colorlist_item_color_transparent_1 { --colorlist-color: var(--colorlist-color-1) !important; }
+.pos .category-list .category-button.o_colorlist_item_color_transparent_2 { --colorlist-color: var(--colorlist-color-2) !important; }
+.pos .category-list .category-button.o_colorlist_item_color_transparent_3 { --colorlist-color: var(--colorlist-color-3) !important; }
+.pos .category-list .category-button.o_colorlist_item_color_transparent_4 { --colorlist-color: var(--colorlist-color-4) !important; }
+.pos .category-list .category-button.o_colorlist_item_color_transparent_5 { --colorlist-color: var(--colorlist-color-5) !important; }
+.pos .category-list .category-button.o_colorlist_item_color_transparent_6 { --colorlist-color: var(--colorlist-color-6) !important; }
+.pos .category-list .category-button.o_colorlist_item_color_transparent_7 { --colorlist-color: var(--colorlist-color-7) !important; }
+.pos .category-list .category-button.o_colorlist_item_color_transparent_8 { --colorlist-color: var(--colorlist-color-8) !important; }
+.pos .category-list .category-button.o_colorlist_item_color_transparent_9 { --colorlist-color: var(--colorlist-color-9) !important; }
+.pos .category-list .category-button.o_colorlist_item_color_transparent_10 { --colorlist-color: var(--colorlist-color-10) !important; }
+.pos .category-list .category-button.o_colorlist_item_color_transparent_11 { --colorlist-color: var(--colorlist-color-11) !important; }
+
+.pos .product-screen .category-button.o_colorlist_item_color_transparent_0 { --colorlist-color: var(--colorlist-color-0) !important; }
+.pos .product-screen .category-button.o_colorlist_item_color_transparent_1 { --colorlist-color: var(--colorlist-color-1) !important; }
+.pos .product-screen .category-button.o_colorlist_item_color_transparent_2 { --colorlist-color: var(--colorlist-color-2) !important; }
+.pos .product-screen .category-button.o_colorlist_item_color_transparent_3 { --colorlist-color: var(--colorlist-color-3) !important; }
+.pos .product-screen .category-button.o_colorlist_item_color_transparent_4 { --colorlist-color: var(--colorlist-color-4) !important; }
+.pos .product-screen .category-button.o_colorlist_item_color_transparent_5 { --colorlist-color: var(--colorlist-color-5) !important; }
+.pos .product-screen .category-button.o_colorlist_item_color_transparent_6 { --colorlist-color: var(--colorlist-color-6) !important; }
+.pos .product-screen .category-button.o_colorlist_item_color_transparent_7 { --colorlist-color: var(--colorlist-color-7) !important; }
+.pos .product-screen .category-button.o_colorlist_item_color_transparent_8 { --colorlist-color: var(--colorlist-color-8) !important; }
+.pos .product-screen .category-button.o_colorlist_item_color_transparent_9 { --colorlist-color: var(--colorlist-color-9) !important; }
+.pos .product-screen .category-button.o_colorlist_item_color_transparent_10 { --colorlist-color: var(--colorlist-color-10) !important; }
+.pos .product-screen .category-button.o_colorlist_item_color_transparent_11 { --colorlist-color: var(--colorlist-color-11) !important; }
