@@ -6,7 +6,7 @@
         <field name="inherit_id" ref="base.res_config_settings_view_form"/>
         <field name="arch" type="xml">
             <xpath expr="//form" position="inside">
-                <app data-string="Colores" string="Colores" name="colorlist_customizer">
+                <app data-string="Colores" string="Colores" name="colorlist_customizer" logo="/colorlist_customizer/static/description/icon.svg">
                     <block title="Colores del Selector de Color" name="colorlist_settings_container">
                         <setting>
                             <field name="color_0" widget="color"/>
