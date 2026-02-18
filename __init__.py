@@ -2,12 +2,9 @@
 from . import models
 from . import controllers
 
-from odoo import api, SUPERUSER_ID
 
-
-def _set_default_colors(cr, registry):
+def _set_default_colors(env):
     """Set default colors in ir.config_parameter when module is installed"""
-    env = api.Environment(cr, SUPERUSER_ID, {})
 
     defaults = [
         "#f15b40",

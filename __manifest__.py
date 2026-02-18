@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 {
     "name": "Customize POS (TPV)",
-    "version": "18.0.1.0.27",
+    "version": "18.0.1.0.28",
     "category": "Technical",
     "summary": "Personalización visual del TPV (categorías, colores, textos)",
     "description": """Personaliza el TPV: colores de categorías, nombres de productos y categorías en mayúsculas, y más opciones visuales desde los ajustes.""",
@@ -28,7 +28,6 @@
             "customize_pos/static/src/js/pos_product_names.js",
         ],
     },
-    "post_init_hook": "_set_default_colors",
     "installable": True,
     "application": False,
     "auto_install": False,
