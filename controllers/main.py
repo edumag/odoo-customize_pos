@@ -11,11 +11,13 @@ class ColorlistCustomizerController(http.Controller):
         """Devuelve la configuración del módulo como JSON"""
         params = request.env['ir.config_parameter'].sudo()
         
-        # Obtener configuración de mayúsculas
-        uppercase_value = params.get_param('colorlist_customizer.product_names_uppercase', 'False')
+        # Obtener configuraciones
+        product_uppercase = params.get_param('colorlist_customizer.product_names_uppercase', 'False')
+        category_uppercase = params.get_param('colorlist_customizer.category_names_uppercase', 'False')
         
         config = {
-            'product_names_uppercase': uppercase_value == 'True'
+            'product_names_uppercase': product_uppercase == 'True',
+            'category_names_uppercase': category_uppercase == 'True'
         }
         
         return request.make_response(

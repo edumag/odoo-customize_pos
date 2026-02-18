@@ -8,3 +8,12 @@ body.product-names-uppercase .pos .product-list .product-name,
 .pos.product-names-uppercase .product-list .product-name {
     text-transform: uppercase !important;
 }
+
+/* Estilos para nombres de categorías en mayúsculas en el TPV */
+/* Se aplica cuando el body tiene la clase category-names-uppercase */
+body.category-names-uppercase .pos .category-button .text-wrap-categ,
+body.category-names-uppercase .pos .category-button span,
+.pos.category-names-uppercase .category-button .text-wrap-categ,
+.pos.category-names-uppercase .category-button span {
+    text-transform: uppercase !important;
+}

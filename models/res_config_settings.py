@@ -24,3 +24,10 @@ class ResConfigSettings(models.TransientModel):
         config_parameter='colorlist_customizer.product_names_uppercase',
         default=False
     )
+    
+    # Opción para mostrar nombres de categorías en mayúsculas
+    category_names_uppercase = fields.Boolean(
+        string='Nombres de categorías en mayúsculas',
+        config_parameter='colorlist_customizer.category_names_uppercase',
+        default=False
+    )

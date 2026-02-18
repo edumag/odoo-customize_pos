@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 {
     'name': 'Colorlist Customizer',
-    'version': '18.0.1.0.24',
+    'version': '18.0.1.0.25',
     'category': 'Technical',
     'summary': 'Personaliza colores y visualización del TPV',
     'description': """Permite al administrador personalizar los 12 colores del widget o_colorlist y las opciones de visualización del TPV desde los Ajustes de Odoo.""",
