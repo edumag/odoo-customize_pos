@@ -14,3 +14,7 @@
   --colorlist-color-10: #b3b6e7;
   --colorlist-color-11: #b3b62a;
 }
+/* Diferenciar mejor entre categorias seleccionadas y no seleccionadas */
+.opacity-50 {
+    opacity: 0.2 !important;
+}
