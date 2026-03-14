@@ -16,6 +16,7 @@
     ],
     "assets": {
         "web.assets_backend": [
+            'customize_pos/static/src/scss/general_backend_styles.scss',
             # CSS con variables de fallback (se sobrescribe con CSS dinámico inline)
             "customize_pos/static/src/scss/colorlist_variables.css",
             "customize_pos/static/src/scss/colorlist_customizer.css",
@@ -27,6 +28,9 @@
             "customize_pos/static/src/js/colorlist_patch.js",
             "customize_pos/static/src/js/pos_product_names.js",
         ],
+        'web.assets_frontend': [
+            'customize_pos/static/src/scss/general_frontend_styles.scss'
+        ]
     },
     "installable": True,
     "application": False,
