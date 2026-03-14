@@ -234,7 +234,44 @@
 .pos .product-screen .category-button.o_colorlist_item_color_transparent_none {
     --bg-opacity: 0.3 !important;
     background-color: var(--colorlist-color) !important;
+    display: none !important; /* Ocultar categorías no seleccionadas */
+    scale: 0 !important;
+    transition: scale .9s ease, display .9s ease allow-discrete !important;
 }
+@starting-style {
+    .o_colorlist_item_color_0,
+    .o_colorlist_item_color_1,
+    .o_colorlist_item_color_2,
+    .o_colorlist_item_color_3,
+    .o_colorlist_item_color_4,
+    .o_colorlist_item_color_5,
+    .o_colorlist_item_color_6,
+    .o_colorlist_item_color_7,
+    .o_colorlist_item_color_8,
+    .o_colorlist_item_color_9,
+    .o_colorlist_item_color_10,
+    .o_colorlist_item_color_11,
+    .o_colorlist_item_color_none {
+
+        display: block !important;
+        scale: 1
+        transition: scale .9s ease-in-out,
+        display .9s ease allow-discrete !important;
+    }
+}
+.o_colorlist_item_color_transparent_0 { --bg-opacity: 0.3 !important; background-color: var(--colorlist-color-0) !important;}
+.o_colorlist_item_color_transparent_1 { --bg-opacity: 0.3 !important; background-color: var(--colorlist-color-1) !important;}
+.o_colorlist_item_color_transparent_2 { --bg-opacity: 0.3 !important; background-color: var(--colorlist-color-2) !important;}
+.o_colorlist_item_color_transparent_3 { --bg-opacity: 0.3 !important; background-color: var(--colorlist-color-3) !important;}
+.o_colorlist_item_color_transparent_4 { --bg-opacity: 0.3 !important; background-color: var(--colorlist-color-4) !important;}
+.o_colorlist_item_color_transparent_5 { --bg-opacity: 0.3 !important; background-color: var(--colorlist-color-5) !important;}
+.o_colorlist_item_color_transparent_6 { --bg-opacity: 0.3 !important; background-color: var(--colorlist-color-6) !important;}
+.o_colorlist_item_color_transparent_7 { --bg-opacity: 0.3 !important; background-color: var(--colorlist-color-7) !important;}
+.o_colorlist_item_color_transparent_8 { --bg-opacity: 0.3 !important; background-color: var(--colorlist-color-8) !important;}
+.o_colorlist_item_color_transparent_9 { --bg-opacity: 0.3 !important; background-color: var(--colorlist-color-9) !important;}
+.o_colorlist_item_color_transparent_10 { --bg-opacity: 0.3 !important; background-color: var(--colorlist-color-10) !important;}
+.o_colorlist_item_color_transparent_11 { --bg-opacity: 0.3 !important; background-color: var(--colorlist-color-11) !important;}
+.o_colorlist_item_color_transparent_none { --bg-opacity: 0.3 !important; background-color: var(--colorlist-color-0) !important;}
 
 .pos .category-list .category-button.o_colorlist_item_color_transparent_0 { --colorlist-color: var(--colorlist-color-0) !important; }
 .pos .category-list .category-button.o_colorlist_item_color_transparent_none { --colorlist-color: var(--colorlist-color-0) !important; }
