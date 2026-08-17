@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <!-- Inyectar CSS dinámico inline en el backend - múltiples templates para asegurar cobertura -->
+    
+    <!-- 1. Template web.layout - layout principal del backend -->
+    <template id="assets_backend_colors_layout" inherit_id="web.layout">
+        <xpath expr="//head" position="inside">
+            <t t-set="colors" t-value="{
+                'color_0': 'f15b40', 'color_1': 'ffdd00', 'color_2': 'af7e6c', 'color_3': 'f7941d',
+                'color_4': '00bfdf', 'color_5': '8dc63f', 'color_6': 'f173ac', 'color_7': 'ee3f75',
+                'color_8': 'b58f2e', 'color_9': 'FF00FF', 'color_10': 'b3b6e7', 'color_11': 'b3b62a'
+            }"/>
+            <t t-set="params" t-value="request.env['ir.config_parameter'].sudo()"/>
+            <style type="text/css" id="customize-pos-colors-inline">
+/* Colores personalizados desde configuración - Layout */
+:root {
+  --colorlist-color-0: #<t t-esc="params.get_param('customize_pos.color_0', colors['color_0'])"/>;
+  --colorlist-color-1: #<t t-esc="params.get_param('customize_pos.color_1', colors['color_1'])"/>;
+  --colorlist-color-2: #<t t-esc="params.get_param('customize_pos.color_2', colors['color_2'])"/>;
+  --colorlist-color-3: #<t t-esc="params.get_param('customize_pos.color_3', colors['color_3'])"/>;
+  --colorlist-color-4: #<t t-esc="params.get_param('customize_pos.color_4', colors['color_4'])"/>;
+  --colorlist-color-5: #<t t-esc="params.get_param('customize_pos.color_5', colors['color_5'])"/>;
+  --colorlist-color-6: #<t t-esc="params.get_param('customize_pos.color_6', colors['color_6'])"/>;
+  --colorlist-color-7: #<t t-esc="params.get_param('customize_pos.color_7', colors['color_7'])"/>;
+  --colorlist-color-8: #<t t-esc="params.get_param('customize_pos.color_8', colors['color_8'])"/>;
+  --colorlist-color-9: #<t t-esc="params.get_param('customize_pos.color_9', colors['color_9'])"/>;
+  --colorlist-color-10: #<t t-esc="params.get_param('customize_pos.color_10', colors['color_10'])"/>;
+  --colorlist-color-11: #<t t-esc="params.get_param('customize_pos.color_11', colors['color_11'])"/>;
+}
+            </style>
+        </xpath>
+    </template>
+</odoo>
